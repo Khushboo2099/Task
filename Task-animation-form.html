@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            background-image: url(css-img/wallpaper.jpg);
+            height: 750px;
+            width: 100%;
+            background-size: cover;
+        }
+        .one
+        {
+            border: 0;
+            height: 330px;
+            width: 230px;
+            padding: 20px 50px 50px 50px;
+            margin-left: 600px;
+            margin-top: 0px;
+            box-shadow: 2px 2px 2px 2px  black;
+            border-radius: 10px;
+        }
+    
+        input
+        {
+            border-radius: 15px;
+            outline: 0;
+            height: 25px;
+            width: 200px;
+            text-align: center;
+        }
+        button
+        {
+            border-radius: 15px;
+            height: 30px;
+            width: 80px;
+            outline: 0;
+            color: black;
+            background-color: white;
+            font-size: medium;
+            font-style: bold;
+        }
+        button:hover
+        {
+            background-color: green;
+            color: white;
+        }
+        span
+        {
+            color: red;
+            border-bottom: 2px solid;
+            width: 10px;
+        }
+        .one h2
+        {
+            border-bottom: 2px solid;
+            text-align: center;
+        }
+        .two
+        {
+            background-color: wheat;
+            height: 100px;
+            width: 100px;
+            margin-left: 100px;
+            animation-name: test;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes test {
+          
+            0%{background-color: rgb(245, 208, 179);top:300px; left:0px;}
+            25%{background-color: wheat;top: 0px; left: 0px;}
+            50%{background-color: wheat; top: 300px; left: 300px;}
+            75%{background-color: wheat; top: 0px; left: 300px;}
+            100%{background-color: wheat; top: 300pxx; left: 0px;}
+            
+        }
+        .three
+        {
+            background-color: whitesmoke;
+            height: 100px;
+            width: 100px;
+            margin-left: 1300px;
+            animation-name: demo;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes demo {
+            0%{background-color: rgb(179, 192, 245);top:0px; right: 300px;}
+            25%{background-color: rgb(179, 192, 245);top: 300px; right: 0px;}
+            50%{background-color: rgb(179, 187, 245); top: 0px;  right: 0px;}
+            75%{background-color: rgb(179, 191, 245); top: 300x; right: 0px;}
+            100%{background-color: rgb(179, 188, 245); top: 0px; right: 300px;}      
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="two"></div>
+        <div class="three"></div>
+       
+        <div class="one">
+            <h2>Login Form</h2>
+            <br><br>
+        <form method="post"> 
+              <input type="text" name="name" placeholder="User Name">
+              <br><br><br>
+              <input type="Password" name="pwd" placeholder="Password">
+              <br><br><br>
+              <button>Login</button>
+              <br>
+              <h4>Forgot Password? <span>Click Hear</span></h4>
+              <h4>Don't have an account? <span>Sighn Up</span></h4>
+              <br><br><br>
+        </form>
+         </div>  
+    </div>
+</body>
+</html>
