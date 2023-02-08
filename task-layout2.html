@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .main{
+      background-color: black;
+      height: 650px;
+      width: 100%;
+    }
+    h2{
+      color: red;
+      text-shadow: gold;
+      padding: 80px 10px 0px 130px;
+      font-weight: bold;
+      font-size: 70px;
+      font-style: italic;
+    }
+    h4{
+      color: red;
+      text-shadow: gold;
+      padding: 10px 10px 0px 130px;
+      font-weight: bold;
+      font-size: 70px;
+      font-style: italic;
+    }
+    h3{
+      color: red;
+      text-shadow: gold;
+      padding: 0px 10px 0px 130px;
+      font-weight: bold;
+      font-size: 70px;
+      font-style: italic; 
+    }
+    p{
+      color: white;
+      font-size: 15px;
+      padding: 10px 10px 0px 130px;
+      width: 550px;
+    }
+    .main-class{
+      display: flex;
+    }
+    .right-img{
+      padding: 70px 20px 10px 130px;
+    }
+  </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="image/foody.png" alt="" height="30" width="80">
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--slider img -->
+<div class="containr fluid">  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="image/food-art-burger.jpg" alt="Los Angeles" style="width:100%; height: 600px;">
+        </div>
+  
+        <div class="item">
+          <img src="image/food-burger.jpg" alt="Chicago" style="width:100%; height: 600px;">
+        </div>
+      
+        <div class="item">
+          <img src="image/foody-burger.jpg" alt="New york" style="width:100%; height: 550px;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- slider img end -->
+
+  <div class="main">
+    <div class="main-class">
+    <div class="left img">
+      <h2>Enjoy Your</h2>
+      <h4>Healthy</h4>
+      <h3>Delicious Food</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus expedita in perferendis, accusamus, quo doloremque vitae harum saepe alias modi atque deserunt
+         rem. Omnis modi dolor totam minima consequatur repudiandae.</p>
+        </div>
+        <div class="right-img">
+          <img src="image/hero-img.png" width="500px" height="500px">
+        </div>
+      </div>
+  </div>
+  
+</body>
+</html>
